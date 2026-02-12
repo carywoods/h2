@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+httpx
+beautifulsoup4
+lxml
+python-whois
+dnspython
+anthropic
+psycopg[binary]
+redis
+resend
+pydantic
+pydantic-settings
