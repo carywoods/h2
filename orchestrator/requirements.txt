@@ -9,5 +9,5 @@ anthropic
 psycopg[binary]
 redis
 resend
-pydantic
+pydantic[email]
 pydantic-settings
