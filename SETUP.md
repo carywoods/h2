@@ -45,6 +45,31 @@
 
 *If using the bundled Postgres/Redis containers, these are set automatically in docker-compose.yml
 
+### Coolify Quick Start Variables
+
+**Required (copy and fill in):**
+```env
+ANTHROPIC_API_KEY=sk-ant-api03-...
+RESEND_API_KEY=re_...
+DB_PASSWORD=your-strong-password
+BASE_URL=https://app.yourdomain.com
+NEXT_PUBLIC_API_URL=https://api.yourdomain.com
+```
+
+**Optional (recommended):**
+```env
+GOOGLE_PLACES_API_KEY=AIza...
+SERPAPI_KEY=...
+```
+
+**If using external database/redis instead of bundled containers:**
+```env
+DATABASE_URL=postgresql://user:pass@host:5432/dbname
+REDIS_URL=redis://default:pass@host:6379
+```
+
+> Note: `DB_PASSWORD` is only needed when using the bundled Postgres container. If you set `DATABASE_URL`, you can omit `DB_PASSWORD`.
+
 ---
 
 ## Local Development
