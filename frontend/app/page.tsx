@@ -1,8 +1,6 @@
 'use client'
-// Force rebuild v2
-import { useState } from 'react'
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://cooow8k888okk0w48kcg4cko.100.86.94.96.sslip.io'
+import { useState } from 'react'
 
 export default function IntakePage() {
   const [companyName, setCompanyName] = useState('')
@@ -18,7 +16,7 @@ export default function IntakePage() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch(`${API_URL}/intake`, {
+      const response = await fetch('/api/intake', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
